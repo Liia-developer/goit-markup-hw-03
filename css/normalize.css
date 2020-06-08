@@ -1,0 +1,119 @@
+/* logo, nav-menu, button, icon, contact (reaction) #2196F3  #AFB1B8 */
+/* logo #000000 */     
+/* contact #757575 */ 
+/* nav-menu, filter-button #212121 #ffffff */   
+/* title, link #ffffff #212121 */   
+/* text #757575 */ 
+/* background #ffffff */ 
+/* section-bg #F5F4FA */
+
+                                               /* common */
+
+:root {
+--title-color: #212121;
+--primary-white-color: #ffffff;
+--accent-color: #2196F3;
+--font-logo: 'Raleway', sans-serif;
+--font-text: 'Roboto', sans
+}
+                            
+body {
+    color: #757575;
+    background-color: #ffffff;
+    font-family: var(--font-text);
+    font-style: normal;
+}
+
+.list {
+    list-style: none;
+}
+
+                                             /* header */
+                            
+                                /* logo */
+.logo {
+    color: #000000;
+    font-family: var(--font-logo);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.20;
+    text-decoration: none;
+}
+                            
+.logo-design {
+    color: var(--accent-color);
+}
+                            /* navigation */
+.menu-nav .link-nav {
+    color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+                            
+.link-nav:hover,
+.link-nav:focus {
+    color: var(--accent-color);
+}
+                            
+.contact-nav .link-contact {
+     color: #757575;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+                            
+.link-contact:hover,
+.link-contact:focus {
+    color: var(--accent-color);
+ }                            
+
+
+                                            /* footer */
+
+ footer {
+    background-color: #2F303A;
+}
+
+.address-text {
+    color: var(--primary-white-color);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.contact-footer .link-footer {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.contact {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.copy {
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 2;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
