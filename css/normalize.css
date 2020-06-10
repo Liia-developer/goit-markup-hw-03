@@ -8,6 +8,15 @@
 /* section-bg #F5F4FA */
 
                                                /* common */
+/* html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+} */
 
 :root {
 --title-color: #212121;
@@ -23,14 +32,35 @@ body {
     font-family: var(--font-text);
     font-style: normal;
 }
-
+                    /* hiden mark; reset ul */
 .list {
-    list-style: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;    
+}
+                   /* reset (h, p) */
+.reset {
+    margin-top: 0;
+}
+                     /* temporary hide */
+.invisible {
+    display: none;
 }
 
                                              /* header */
                             
                                 /* logo */
+
+.container {
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    outline: 2px solid tomato; 
+}
+
 .logo {
     color: #000000;
     font-family: var(--font-logo);
@@ -77,16 +107,37 @@ body {
                                             /* footer */
 
  footer {
+    padding-top: 45px;
+    padding-bottom: 21px;
+    
     background-color: #2F303A;
 }
 
+.logo-footer {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
 .address-text {
+    margin-bottom: 9px;
+
     color: var(--primary-white-color);
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+}
+
+.mail-footer {
+    display: inline-block;
+    margin-bottom: 9px;
+}
+
+.phon-footer {
+    display: inline-block;
+    margin-bottom: 28px;
+
 }
 
 .contact-footer .link-footer {
@@ -100,6 +151,9 @@ body {
 }
 
 .contact {
+    display: inline-block;
+    margin-bottom: 20px;
+
     color: #ffffff;
     font-weight: bold;
     font-size: 14px;
@@ -108,7 +162,22 @@ body {
     text-transform: uppercase;
 }
 
+.button-footer {
+    display: inline-block;
+    /* min-width: 200px; */
+    padding: 10px 62px 10px 29px;
+    border-radius: 4px;    
+
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+
+    text-align: center;
+    text-decoration: none;
+}
+
 .copy {
+    margin-bottom: 0;
+
     color: rgba(255, 255, 255, 0.4);
     font-weight: normal;
     font-size: 12px;
